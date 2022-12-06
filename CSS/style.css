@@ -31,7 +31,7 @@ body{
     display: flex;
 }
 .nav-option li{
-    margin: 0px 20px;
+    margin: 0px 18px;
 }
 .nav-option a{
     font-family: 'Oswald', sans-serif;
@@ -39,6 +39,16 @@ body{
     text-transform: uppercase;
     color: whitesmoke;
     font-size: 16px;
+    letter-spacing: 1px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.nav-option a:hover{
+    background-color: #E30B5C;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    text-transform: capitalize;
 }
 
 /* landing name sec */
@@ -49,6 +59,10 @@ body{
     margin-right: 93%;
     border: none;
     border-bottom: 1px solid #f5f5f5;
+    transition: 3s;
+}
+.artist-info-sec hr:hover{
+    margin-right: 80%;
 }
 .artist-info-sec p{
     font-family: 'Oswald', sans-serif;
@@ -79,6 +93,59 @@ body{
     font-weight: 500;
     border-radius: 5px;
 }
+/* about me */
+.about-me-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 5% 8%;
+    gap: 50px;
+}
+.about-me-image img{
+    width: 100%;
+}
+.about-me-text h3{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #E30B5C;
+}
+.about-me-text h1{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.about-me-text hr{
+    border: none;
+    border-bottom: 1px solid #E30B5C;
+    margin-right: 85%;
+    margin-bottom: 15px;
+    transition: 3s;
+}
+.about-me-text hr:hover{
+    margin-right: 50%;
+}
+.about-me-text p{
+    color: gray;
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.about-me-text a{
+    text-decoration: none;
+    background-color: #E30B5C;
+    padding: 10px 15px;
+    color: #f5f5f5;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 5px;
+}
 /* media query */
 @media screen and (max-width:767px) {
     .nav-bar{
@@ -94,6 +161,13 @@ body{
     }
     .nav-option li{
         margin: 0px 5px;
+    }
+    /* about me */
+    .about-me-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 5% 8%;
+        gap: 50px;
     }
 }
 
@@ -111,5 +185,12 @@ body{
     }
     .nav-option li{
         margin: 0px 5px;
+    }
+    /* about me */
+    .about-me-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 5% 8%;
+        gap: 50px;
     }
 }
