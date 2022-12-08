@@ -304,6 +304,9 @@ td{
     margin-bottom: 15px;
     transition: 3s;
 }
+.price-text hr:hover{
+    margin-right: 75%;
+}
 .price-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -311,7 +314,7 @@ td{
     margin: 5% 8%;
 }
 .general-price,.bridal-price{
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     padding: 50px;
     border-radius: 5px;
 }
@@ -367,6 +370,9 @@ td{
     margin-right: 94%;
     margin-bottom: 15px;
     transition: 3s;
+}
+.protfolio-text hr:hover{
+    margin-right: 75%;
 }
 .portfolio-img{
     display: grid;
@@ -441,8 +447,9 @@ td{
     margin-bottom: 15px;
     transition: 3s;
 }
-
-/* latest */
+.latest-text hr:hover{
+    margin-right: 75%;
+}
 .news-sec{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -483,6 +490,125 @@ td{
     color: #333 !important;
     font-weight: 700;
 }
+
+/* blog */
+.blog{
+    margin: 6%;
+}
+.blog h3{
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #E30B5C;
+}
+/* location */
+.get-in-touch-form{
+    margin-top: 8%;
+}
+.location-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8%;
+}
+.location-text h3{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #E30B5C;
+}
+.location-text h1{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.location-text hr{
+    border: none;
+    border-bottom: 1px solid #E30B5C;
+    margin-right: 75%;
+    margin-bottom: 15px;
+    transition: 3s;
+}
+.location-text hr:hover{
+    margin-right: 10%;
+}
+.location-info p{
+    margin: 30px 0px;
+    line-height: 30px;
+    color: gray;
+    font-weight: 500;
+}
+.contact-info{
+    margin: 15px 0px;
+}
+.contact-info a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+}
+.contact-info a:hover{
+    color: #E30B5C;
+}
+.contact-info i{
+    color: #E30B5C;
+    margin-right: 10px;
+}
+.get-text h3{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #E30B5C;
+}
+.get-form{
+    margin-top: 50px;
+}
+.get-form textarea{
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.get-form textarea::placeholder{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+#text-1{
+    margin-right: 30px;
+}
+.get-form input{
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+.get-form input::placeholder{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 13px;
+}
+.get-form button{
+    margin-top: 30px;
+    padding: 12px 35px;
+    border: none;
+    background-color: #E30B5C;
+    color: #f5f5f5;
+    font-weight: 12px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
 /* media query */
 @media screen and (max-width:767px) {
     .nav-bar{
